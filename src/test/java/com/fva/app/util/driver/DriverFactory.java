@@ -13,7 +13,7 @@ import java.net.URI;
 
 
 public class DriverFactory {
-    private static String pathFormat = System.getProperty("user.dir") + "/src/test/resources/drivers/windows/%s";
+    private static String pathFormat = System.getProperty("user.dir") + "/src/test/resources/drivers/linux/%s";
 
 
     public static WebDriver get(Browser browser) {
