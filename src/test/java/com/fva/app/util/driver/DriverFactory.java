@@ -10,6 +10,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.springframework.beans.factory.annotation.Value;
 import java.net.MalformedURLException;
 import java.net.URI;
+import org.springframework.stereotype.Component;
 
 @Component
 public class DriverFactory {
