@@ -6,22 +6,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import org.springframework.context.annotation.Scope;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+@Scope("cucumber-glue")
 @Component
 @Getter
-public class SignUpPageObject {
-
-
-    @Autowired
-    private WebDriver driver;
+public class SignUpPageObject extends PageBase{
 
     @Autowired
     public SignUpPageObject(WebDriver driver) {
-        this.driver = driver;
-
-        PageFactory.initElements(this.driver,this);
+        super(driver);
     }
 
     @FindBy(xpath = "//input[@name='first_name']")
