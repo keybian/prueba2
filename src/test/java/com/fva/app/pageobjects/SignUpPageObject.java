@@ -14,9 +14,14 @@ import org.springframework.stereotype.Component;
 public class SignUpPageObject {
 
 
-    
+    @Autowired
+    private WebDriver driver;
+
+
     public SignUpPageObject(WebDriver driver) {
-        PageFactory.initElements(driver,this);
+        this.driver = driver;
+
+        PageFactory.initElements(this.driver,this);
     }
 
     @FindBy(xpath = "//input[@name='first_name']")
