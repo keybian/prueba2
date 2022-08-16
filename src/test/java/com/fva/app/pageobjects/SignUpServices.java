@@ -5,15 +5,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
+@Scope("cucumber-glue")
 public class SignUpServices {
-    @Autowired
-    private WebDriver driver;
+
     @Autowired
     private SignUpPageObject signUpPageObject;
 
+    @Autowired
+    private WebDriver driver;
 
-
-
+    @Autowired
+    WebDriverWait wait;
+    
+    
     public void go(String url){
         this.driver.get(url);
     }
