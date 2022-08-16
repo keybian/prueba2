@@ -22,12 +22,12 @@ public class DriverFactory {
 
 
         if (Browser.chrome.equals(browser)) {
-            System.setProperty("webdriver.chrome.driver", String.format(pathFormat,"chromedriver.exe"));
+            System.setProperty("webdriver.chrome.driver", String.format(pathFormat,"chromedriver"));
 
             return new ChromeDriver();
         }
         if (Browser.firefox.equals(browser)) {
-            System.setProperty("webdriver.gecko.driver",String.format(pathFormat,"geckodriver.exe"));
+            System.setProperty("webdriver.gecko.driver",String.format(pathFormat,"geckodriver"));
 
             return new FirefoxDriver();
         }
