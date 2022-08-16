@@ -36,8 +36,5 @@ public class DriverConfig {
         return driver.get(driveType);
     }
 
-    @Bean
-    public WebDriverWait waitFor(){
-        return new WebDriverWait(webDriver(), Duration.ofSeconds(webDriverWaitTimeOut));
-    }
+
 }
