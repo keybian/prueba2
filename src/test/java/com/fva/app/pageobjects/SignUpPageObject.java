@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 public class SignUpPageObject {
 
 
-    @Autowired
+    
     public SignUpPageObject(WebDriver driver) {
         PageFactory.initElements(driver,this);
     }
