@@ -17,7 +17,7 @@ public class SignUpPageObject {
     @Autowired
     private WebDriver driver;
 
-
+    @Autowired
     public SignUpPageObject(WebDriver driver) {
         this.driver = driver;
 
