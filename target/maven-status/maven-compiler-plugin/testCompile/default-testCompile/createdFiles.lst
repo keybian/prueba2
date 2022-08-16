@@ -1,0 +1,15 @@
+com\fva\app\conf\DriverConfig.class
+com\fva\app\pageobjects\SignUpServices.class
+com\fva\app\models\User.class
+com\fva\app\util\driver\reporting\ScenarioExecutionInfo.class
+com\fva\app\models\User$UserBuilder.class
+com\fva\app\stepdefinitions\SignUpStepDefs.class
+com\fva\app\util\driver\reporting\JReporter.class
+com\fva\app\builders\data\UserBuilder.class
+com\fva\app\tasks\NavigateTo.class
+com\fva\app\tasks\UserSingUp.class
+com\fva\app\util\driver\DriverFactory.class
+com\fva\app\util\driver\reporting\PhotographerHook.class
+com\fva\app\enums\Browser.class
+com\fva\app\pageobjects\SignUpPageObject.class
+CucumberTest.class
