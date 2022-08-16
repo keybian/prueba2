@@ -3,6 +3,8 @@ package com.fva.app.pageobjects;
 import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
