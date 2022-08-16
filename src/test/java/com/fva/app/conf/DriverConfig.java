@@ -30,12 +30,12 @@ public class DriverConfig {
 
 
     @Bean
-    public WebDriver webDriver() throws MalformedURLException {
+    public WebDriver webDriver() {
         return DriverFactory.get(driveType);
     }
 
     @Bean
-    public WebDriverWait waitFor() throws MalformedURLException {
+    public WebDriverWait waitFor(){
         return new WebDriverWait(webDriver(), Duration.ofSeconds(webDriverWaitTimeOut));
     }
 }
