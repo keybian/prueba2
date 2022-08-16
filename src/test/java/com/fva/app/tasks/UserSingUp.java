@@ -3,8 +3,10 @@ package com.fva.app.tasks;
 import com.fva.app.models.User;
 import com.fva.app.pageobjects.SignUpServices;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+@Scope("cucumber-glue")
 @Component
 public class UserSingUp {
 
