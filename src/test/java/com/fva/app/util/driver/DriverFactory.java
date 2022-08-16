@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Value;
 import java.net.MalformedURLException;
 import java.net.URI;
 
-
+@Component
 public class DriverFactory {
     private static String pathFormat = System.getProperty("user.dir") + "/src/test/resources/drivers/linux/%s";
 

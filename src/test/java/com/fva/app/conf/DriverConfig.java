@@ -28,10 +28,12 @@ public class DriverConfig {
     private int webDriverWaitTimeOut;
 
 
+    @Autowired
+    private DriverFactory driver;
 
     @Bean
     public WebDriver webDriver() {
-        return DriverFactory.get(driveType);
+        return driver.get(driveType);
     }
 
     @Bean
