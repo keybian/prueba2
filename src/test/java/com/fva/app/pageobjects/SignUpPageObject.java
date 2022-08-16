@@ -5,8 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-
+import com.mesaj.app.pageobjects.PageBase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
@@ -14,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Scope("cucumber-glue")
 @Component
 @Getter
-public class SignUpPageObject extends com.mesaj.app.pageobjects.PageBase {
+public class SignUpPageObject extends PageBase {
 
     @Autowired
     public SignUpPageObject(WebDriver driver) {
